@@ -1,0 +1,14 @@
+! Set cursor theme for system
+
+Xcursor.theme: Bluecurve
+Xcursor.size:  36
+
+! Xft font settings
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.rgba:       rgb
+Xft.hintstyle:  hintslight
+Xft.autohint:	false
+Xft.lcdfilter:	lcddefault

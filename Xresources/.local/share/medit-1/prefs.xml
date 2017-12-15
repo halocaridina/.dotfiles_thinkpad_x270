@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- -*- xml -*- -->
+<moo-prefs version="1.0">
+  <Prefs>
+    <item name="Editor/color_scheme" type="string">tango</item>
+    <item name="Editor/font" type="string">Terminus (TTF) Medium 16</item>
+    <item name="Editor/open_dialog_follows_doc" type="bool">TRUE</item>
+    <item name="Editor/save_session" type="bool">FALSE</item>
+    <item name="Editor/show_line_numbers" type="bool">TRUE</item>
+    <item name="Editor/show_spaces" type="bool">TRUE</item>
+    <item name="Editor/show_tabs" type="bool">TRUE</item>
+    <item name="Editor/show_trailing_spaces" type="bool">TRUE</item>
+  </Prefs>
+</moo-prefs>
