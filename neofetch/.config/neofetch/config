@@ -19,8 +19,12 @@ printinfo () {
     info underline
 
     info "Model" model
+    info "CPU" cpu
+    info "GPU" gpu
     info "OS" distro
     info "Kernel" kernel
+    info "Memory" memory
+    info "Disks" disk
     info "Uptime" uptime
     info "Packages" packages
     info "Shell" shell
@@ -33,10 +37,6 @@ printinfo () {
     info "Font" font
     info "Terminal" term
     info "Terminal Font" termfont
-    info "CPU" cpu
-    info "GPU" gpu
-    info "Memory" memory
-    info "Disks" disk
     info "Local IP" localip
     info "Public IP" publicip
     info "Battery" battery
