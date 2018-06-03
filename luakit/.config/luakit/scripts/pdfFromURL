@@ -1,0 +1,13 @@
+url=$1
+file="${url##*/}"
+echo $file
+case "$file" in  
+     *\%20* )
+	   /usr/bin/aria2c --allow-overwrite=true -d /tmp $url -o lousy_file_name_that_had_spaces.pdf
+	   /usr/bin/zathura /tmp/lousy_file_name_that_had_spaces.pdf
+          ;;
+       *)
+	   /usr/bin/aria2c --allow-overwrite=true -d /tmp $url
+	   /usr/bin/zathura /tmp/$file
+           ;;
+esac

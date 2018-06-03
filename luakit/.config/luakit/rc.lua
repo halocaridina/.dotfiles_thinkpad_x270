@@ -4,6 +4,24 @@
 
 require "lfs"
 
+-- Check for lua configuration files that will never be loaded because they are
+-- shadowed by builtin modules.
+table.insert(package.loaders, 2, function (modname)
+    if not package.searchpath then return end
+    local f = package.searchpath(modname, package.path)
+    if not f or f:find(luakit.install_paths.install_dir .. "/", 0, true) ~= 1 then
+        return
+    end
+    local lf = luakit.config_dir .. "/" .. modname:gsub("%.","/") .. ".lua"
+    if f == lf then
+        msg.warn("Loading local version of '" .. modname .. "' module: " .. lf)
+    elseif lfs.attributes(lf) then
+        msg.warn("Found local version " .. lf
+            .. " for core module '" .. modname
+            .. "', but it won't be used, unless you update 'package.path' accordingly.")
+    end
+end)
+
 require "unique_instance"
 
 -- Set the number of web processes to use. A value of 0 means 'no limit'.
@@ -51,6 +69,7 @@ local modes = require "modes"
 local binds = require "binds"
 
 local settings = require "settings"
+require "settings_chrome"
 
 ----------------------------------
 -- Optional user script loading --
@@ -117,7 +136,7 @@ local history = require "history"
 local history_chrome = require "history_chrome"
 
 local help_chrome = require "help_chrome"
-local introspector_chrome = require "introspector_chrome"
+local binds_chrome = require "binds_chrome"
 
 -- Add command completion
 local completion = require "completion"
@@ -145,8 +164,11 @@ local error_page = require "error_page"
 -- Add userstyles loader
 local styles = require "styles"
 
+-- Use vertical tabs instead of horizontal ones
+-- require "vertical_tabs"
+
 -- Hide scrollbars on all pages
--- local hide_scrollbars = require "hide_scrollbars"
+--local hide_scrollbars = require "hide_scrollbars"
 
 -- Add a stylesheet when showing images
 local image_css = require "image_css"
@@ -160,22 +182,48 @@ local tab_favicons = require "tab_favicons"
 -- Add :view-source command
 local view_source = require "view_source"
 
--- Load vertical tab
--- local vertical_tabs = require "vertical_tabs"
+-- Put "userconf.lua" in your Luakit config dir with your own tweaks; if this is
+-- permanent, no need to copy/paste/modify the default rc.lua whenever you
+-- update Luakit.
+if pcall(function () lousy.util.find_config("userconf.lua") end) then
+    require "userconf"
+end
 
--- Load user preferences
-local userprefs = require "userprefs"
-
--- Play Embedded Video in External Player.
- modes.add_binds("normal", {  
-       { "v", "Play video in page", function (w)  
-        local view = w.view  
-         local uri = view.hovered_uri or view.uri
-          if uri then  
-           luakit.spawn(string.format("mpv --geometry=640x360 %s", uri ))  
-        end  
-    end },  
-  })
+modes.add_binds("ex-follow", {
+  -- Yank element uri to open in an external application
+  { "d", "[[Hint all links (as defined by the `follow.selectors.uri` selector) and set the primary selection to the matched elements URI, so that an external app can open it]]",
+  function (w)
+    w:set_mode("follow", {
+      prompt = "video", selector = "uri", evaluator = "uri",
+      func = function (uri)
+        assert(type(uri) == "string")
+        uri = string.gsub(uri, " ", "%%20")
+        luakit.selection.primary = uri
+        if string.match(uri, "youtube") then
+          luakit.spawn(string.format("mpv --ytdl-format 'best[height=720]' '%s'", uri))
+          -- This also works
+          -- luakit.spawn(string.format("mpv --geometry=640x360 %s", uri))
+          w:notify("trying to play file on mpv " .. uri)
+        elseif string.match(uri, "vimeo") then
+          luakit.spawn(string.format("mpv %s", uri))
+          w:notify("trying to play file on mpv " .. uri)
+        elseif string.match(uri, "MP4") then
+          luakit.spawn(string.format("mpv %s", uri))
+          w:notify("trying to play file on mpv " .. uri)
+        elseif string.match(uri, "pdf" or "PDF") then
+          luakit.spawn(string.format("/home/srsantos/.config/luakit/scripts/pdfFromURL %s", uri))
+          w:notify("trying to read file via zathura ")
+        elseif string.match(uri, "jpg") then
+          luakit.spawn(string.format("feh -x %s", uri))
+          w:notify("file contains jpg " )
+        else
+          luakit.spawn(string.format("feh -x %s.jpg", uri))
+          w:notify("no jpg extension | unrecognized")
+        end
+      end
+    })
+  end },
+})
 
 -----------------------------
 -- End user script loading --
