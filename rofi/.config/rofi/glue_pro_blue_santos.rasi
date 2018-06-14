@@ -34,6 +34,19 @@
     active-background:           rgba ( 57, 57, 57, 100 % );
     selected-active-background:  rgba ( 57, 120, 180, 100 % );
 }
+configuration {
+
+    // The display name of this browser
+    display-ssh:                    "";
+    // The display name of this browser
+    display-run:                    ": ";
+    // The display name of this browser
+    display-drun:                   "";
+    // The display name of this browser
+    display-window:                 "";
+    display-combi:                  "";
+    show-icons: false;
+}
 #window {
     background-color: @background;
     transparency: "screenshot";
