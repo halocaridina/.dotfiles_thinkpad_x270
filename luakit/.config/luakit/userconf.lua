@@ -11,7 +11,7 @@ settings.window.new_window_size                       = "1920x1080"
 settings.window.load_etc_hosts                        = false
 
 settings.webview.zoom_level                           = 140
-settings.webview.zoom_text_only                       = true
+settings.webview.zoom_text_only                       = false
 settings.webview.enable_webgl                         = true
 
 settings.on["youtube.com"].webview.enable_javascript  = true
