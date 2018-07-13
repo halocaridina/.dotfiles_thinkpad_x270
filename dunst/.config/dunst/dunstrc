@@ -1,12 +1,12 @@
 [global]
     markup = yes
-    font = "xos4 Terminus 9"
-    format = "<span font="xos4 Terminus 10.5">%s</span>\n<span font="xos4 Terminus 9">%b</span>"
+    font = "xos4 Terminess Powerline 18px"
+    format = "<span font="xos4 Terminess Powerline 24px">%s</span>\n<span font="xos4 Terminess Powerline 18px">%b</span>"
     alignment = center
 
     bounce_freq = 0
     follow = mouse
-    geometry = "340x5-8+30"
+    geometry = "440x5-8+30"
     horizontal_padding = 8
     idle_threshold = 120
     ignore_newline = no
