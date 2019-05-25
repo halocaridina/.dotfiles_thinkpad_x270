@@ -2,7 +2,8 @@
  * ROFI Color theme
  * User: Rasi
  * Copyright: Rasmus Steinke
- ******************************************************************************/
+******************************************************************************/
+
 * {
     selected-normal-foreground:  rgba ( 255, 255, 255, 100 % );
     foreground:                  rgba ( 255, 255, 255, 100 % );
@@ -17,7 +18,7 @@
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 32, 81, 113, 100 % );
     alternate-active-background: rgba ( 57, 57, 57, 40 % );
-    background:                  rgba ( 57, 57, 57, 90 % );
+    background:                  rgba ( 57, 57, 57, 95 % );
     bordercolor:                 rgba ( 78, 78, 78, 40% );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 57, 57, 57, 40 % );
@@ -34,12 +35,12 @@
     active-background:           rgba ( 57, 57, 57, 100 % );
     selected-active-background:  rgba ( 57, 120, 180, 100 % );
 }
-configuration {
 
+#configuration {
     // The display name of this browser
     display-ssh:                    "";
     // The display name of this browser
-    display-run:                    ": ";
+    display-run:                    "";
     // The display name of this browser
     display-drun:                   "";
     // The display name of this browser
@@ -47,11 +48,12 @@ configuration {
     display-combi:                  "";
     show-icons: false;
 }
+
 #window {
     background-color: @background;
-    transparency: "screenshot";
-    border:           0;
-    padding:          200;
+    transparency:     "screenshot";
+    border:           0px;
+    padding:          300px;
 }
 #mainbox {
     border:  0;
@@ -66,7 +68,7 @@ configuration {
     text-color: @foreground;
 }
 #listview {
-    fixed-height: 0;
+    fixed-height: 0px;
     border:       2px dash 0px 0px ;
     border-color: @separatorcolor;
     spacing:      2px ;
@@ -115,13 +117,14 @@ configuration {
 }
 #scrollbar {
     width:        4px ;
-    border:       0;
+    border:       0px;
     handle-width: 8px ;
-    padding:      0;
+    padding:      0px;
 }
 #sidebar {
     border:       2px dash 0px 0px ;
     border-color: @separatorcolor;
+    padding:      6px;
 }
 #button.normal {
     text-color: rgba ( 255, 255, 255, 30% );
@@ -131,19 +134,27 @@ configuration {
     text-color:       @selected-normal-foreground;
 }
 #inputbar {
-    spacing:    0;
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    spacing:    0px;
     text-color: @normal-foreground;
-    padding:    1px ;
+    padding:    2px ;
 }
 #case-indicator {
-    spacing:    0;
+    spacing:    0px;
     text-color: @normal-foreground;
 }
 #entry {
-    spacing:    0;
+    spacing:    0px;
     text-color: @normal-foreground;
 }
 #prompt {
-    spacing:    0;
+    spacing:    0px;
     text-color: @normal-foreground;
 }
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @normal-foreground;
+}
+
