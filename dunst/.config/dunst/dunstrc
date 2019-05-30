@@ -25,6 +25,7 @@
 #    icon_position = left
 #    icon_path = /home/srsantos/.config/dunst/icons:/usr/share/icons/gnome-colors-common/scalable/status:/usr/share/icons/gnome-brave/scalable/status
 #    max_icon_size = 72
+    max_icon_size = 0
 
     frame_width = 1
     frame_color = "#323232"
