@@ -10,6 +10,8 @@ settings.window.zoom_step                             = 0.2
 settings.window.new_window_size                       = "1920x1080"
 settings.window.load_etc_hosts                        = false
 
+settings.webview.enable_smooth_scrollinig             = true
+
 settings.webview.zoom_level                           = 140
 settings.webview.zoom_text_only                       = false
 settings.webview.enable_webgl                         = true

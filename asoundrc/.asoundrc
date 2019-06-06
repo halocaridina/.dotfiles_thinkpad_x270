@@ -1,3 +1,12 @@
+pcm.upmix71 {
+    type upmix
+    slave.pcm "surround71"
+    delay 15
+    channels 8
+}
+
+pcm.!default "plug:upmix71"
+
 # Below will redirect sound to HDMI
 # Uncomment and alsactl nrestore
 #pcm.!default {
