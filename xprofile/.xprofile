@@ -20,8 +20,8 @@ fi
 /usr/bin/setxkbmap -option terminate:ctrl_alt_bksp
 
 # Set auto-suspend after 30 mins of inactivity
-/usr/bin/xautolock -time 30 -locker "systemctl suspend" -detectsleep &
+#/usr/bin/xautolock -time 30 -locker "systemctl suspend" -detectsleep &
 
 # Enable screen locking no matter the wm
-/usr/bin/xss-lock -- /usr/bin/i3lock -f -b -i /home/srsantos/.i3/wallpapers/Black_Burst_Info_1920x1080.png &
+#/usr/bin/xss-lock -- /usr/bin/i3lock -f -b -i /home/srsantos/.i3/wallpapers/Black_Burst_Info_1920x1080.png &
 ###/usr/bin/xss-lock -- /usr/bin/i3lock-fancy -f Terminus-\(TTF\)-Bold -t "Hello Scott, waiting for your fingerprint..." &

@@ -102,7 +102,7 @@ endif
 syntax on
 set background=dark
 set t_Co=256
-colorscheme ir_black
+colorscheme apprentice
 
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 let g:CSApprox_hook_post = ['hi Normal ctermbg=NONE', 'hi NonText ctermbg=NONE' ]
