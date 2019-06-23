@@ -5,6 +5,8 @@ share/recently-used.xbel
 share/mc/history
 share/keyrings
 share/zathura/*
+share/gvfs-metadata/*
+share/Trash/*
 state
 state/*
 share/webkitgtk/*
