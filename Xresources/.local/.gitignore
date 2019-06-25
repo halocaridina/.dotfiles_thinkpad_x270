@@ -5,7 +5,9 @@ share/recently-used.xbel
 share/mc/history
 share/keyrings
 share/zathura/*
+share/gvfs-metadata
 share/gvfs-metadata/*
+share/gvfs-metadata/root*
 share/Trash/*
 state
 state/*
