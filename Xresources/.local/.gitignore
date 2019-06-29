@@ -5,6 +5,8 @@ share/recently-used.xbel
 share/mc/history
 share/keyrings
 share/zathura/*
+share/locale/*
+share/cinnamon/*
 share/gvfs-metadata
 share/gvfs-metadata/*
 share/gvfs-metadata/root*
