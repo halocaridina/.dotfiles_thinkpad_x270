@@ -33,4 +33,6 @@ ColorPalette=#000000;#cc0000;#4e9a06;#c4a000;#3465a4;#75507b;#06989a;#d3d7cf;#55
 FontAllowBold=FALSE
 BackgroundDarkness=0.920000
 ColorForeground=#bababdbdb6b6
+UseDefaultWorkingDir=TRUE
+DefaultWorkingDir=/home/srsantos
 
