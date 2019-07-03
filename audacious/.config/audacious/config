@@ -1,0 +1,41 @@
+
+[audacious]
+equalizer_active=TRUE
+equalizer_bands=4,11,5,-3,-2,1,4,9,12,14
+equalizer_preamp=-8.16
+
+[audgui]
+about_win=668,336,582,376
+eq_preset_win=1061,210,343,235
+equalizer_win=816,607,288,288
+filebrowser_win=623,268,672,480
+filesel_path=/home/srsantos/Music/Various
+info_win=689,271,573,474
+preset_browser_win=203,236,1020,765
+
+[gtkui]
+column_widths=10,275,175,48,175,175,10,100,39,75,275,275,275,10,275
+player_x=35
+player_y=49
+playlist_columns=title artist album year queued length
+
+[gtkui-layout]
+item0_name=Album Art
+item0_pos=-1,0,0,272,176
+item1_name=Blur Scope
+item1_pos=-1,0,0,280,184
+item2_name=OpenGL Spectrum Analyzer
+item2_pos=-1,0,0,280,184
+item3_name=Spectrum Analyzer
+item3_pos=-1,0,0,280,184
+item4_name=LyricWiki Plugin
+item4_pos=-1,0,0,568,688
+item5_name=Search Tool
+item5_pos=0,-1,-1,198,380
+item_count=6
+
+[skins]
+mainwin_font=Roboto Medium 9
+mainwin_use_bitmapfont=FALSE
+playlist_font=Roboto Medium 8
+skin=/usr/share/audacious/Skins/Default
