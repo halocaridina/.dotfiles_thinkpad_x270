@@ -129,6 +129,7 @@ alias update_prezto='cd $ZPREZTODIR && git pull && git submodule update --init -
 alias rm_DS_Stores='find . -name ".DS_Store" -delete'
 
 ####alias pulseaudio-ctl='/usr/local/bin/pulseaudio-ctl_local'
+####youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s"
 
 alias music_mpv='mpv --no-video'
 alias music_mpv_random_playlist='mpv --no-video --shuffle --playlist <(find "$PWD" -type f)'
