@@ -26,10 +26,10 @@ preset_browser_win=203,236,1020,765
 
 [gtkui]
 column_widths=10,275,175,48,175,175,10,100,39,75,275,275,275,10,275
-player_height=537
-player_width=1083
-player_x=27
-player_y=35
+player_height=605
+player_width=1142
+player_x=391
+player_y=215
 playlist_columns=title artist album year queued length
 
 [gtkui-layout]
