@@ -1,9 +1,8 @@
 tooltip {
-     border-radius: 2px;
-     border: 1px solid #000000;
+    border-radius: 2px;
+    border: 1px solid #000000;
 }
-
 tooltip.background {
-     background-color: rgba(79, 81, 84, 0.90);
-     background-clip: padding-box;
+    background-color: rgba(47, 47, 47, 0.95);
+    background-clip: padding-box;
 }

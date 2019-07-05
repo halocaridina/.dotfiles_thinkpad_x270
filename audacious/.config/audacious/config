@@ -1,4 +1,14 @@
 
+[aosd]
+decoration_code=1
+decoration_color_0=13364,15163,15934,32767
+position_offset_x=-10
+position_offset_y=-45
+position_placement=9
+text_fonts_name_0=Roboto Condensed, 26
+transparency_mode=1
+trigger_enabled=1,1,1,1
+
 [audacious]
 equalizer_active=TRUE
 equalizer_bands=4,11,5,-3,-2,1,4,9,12,14
@@ -16,15 +26,15 @@ preset_browser_win=203,236,1020,765
 
 [gtkui]
 column_widths=10,275,175,48,175,175,10,100,39,75,275,275,275,10,275
-player_height=808
-player_width=958
-player_x=480
-player_y=146
+player_height=537
+player_width=1083
+player_x=27
+player_y=35
 playlist_columns=title artist album year queued length
 
 [gtkui-layout]
 item0_name=Album Art
-item0_pos=-1,0,0,272,176
+item0_pos=-1,0,0,268,172
 item1_name=Blur Scope
 item1_pos=-1,0,0,280,184
 item2_name=OpenGL Spectrum Analyzer
@@ -34,7 +44,7 @@ item3_pos=-1,0,0,280,184
 item4_name=LyricWiki Plugin
 item4_pos=-1,0,0,568,688
 item5_name=Search Tool
-item5_pos=0,-1,-1,198,380
+item5_pos=0,-1,-1,198,431
 item_count=6
 
 [skins]
@@ -42,3 +52,7 @@ mainwin_font=Roboto Medium 9
 mainwin_use_bitmapfont=FALSE
 playlist_font=Roboto Medium 8
 skin=/usr/share/audacious/Skins/Default
+
+[song_change]
+cmd_line=/usr/bin/python2.7 /home/srsantos/.config/Audacious_Notifier/AudaciousNotifier.py "%f" "%n"
+cmd_line_ttc=/usr/bin/notify-send -i audacious "Audacious" "%n"
