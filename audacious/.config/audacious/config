@@ -13,6 +13,7 @@ trigger_enabled=1,1,1,1
 equalizer_active=TRUE
 equalizer_bands=4,11,5,-3,-2,1,4,9,12,14
 equalizer_preamp=-8.16
+filepopup_delay=20
 shuffle=TRUE
 
 [audgui]
@@ -21,20 +22,21 @@ eq_preset_win=1061,210,343,235
 equalizer_win=816,607,288,288
 filebrowser_win=623,268,672,480
 filesel_path=/home/srsantos/Music/Various
-info_win=689,271,573,474
+info_win=630,282,573,474
 preset_browser_win=203,236,1020,765
+queue_manager_win=815,412,288,192
 
 [gtkui]
 column_widths=10,275,175,48,175,175,10,100,39,75,275,275,275,10,275
 player_height=605
 player_width=1142
-player_x=391
-player_y=215
+player_x=127
+player_y=186
 playlist_columns=title artist album year queued length
 
 [gtkui-layout]
 item0_name=Album Art
-item0_pos=-1,0,0,268,172
+item0_pos=-1,0,0,264,168
 item1_name=Blur Scope
 item1_pos=-1,0,0,280,184
 item2_name=OpenGL Spectrum Analyzer
@@ -45,7 +47,9 @@ item4_name=LyricWiki Plugin
 item4_pos=-1,0,0,568,688
 item5_name=Search Tool
 item5_pos=0,-1,-1,198,431
-item_count=6
+item6_name=Playlist Manager
+item6_pos=-1,0,0,284,188
+item_count=7
 
 [skins]
 mainwin_font=Roboto Medium 9
