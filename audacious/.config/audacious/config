@@ -36,7 +36,7 @@ playlist_columns=title artist album year queued length
 
 [gtkui-layout]
 item0_name=Album Art
-item0_pos=-1,0,0,264,168
+item0_pos=-1,0,0,252,156
 item1_name=Blur Scope
 item1_pos=-1,0,0,280,184
 item2_name=OpenGL Spectrum Analyzer
