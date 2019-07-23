@@ -18,7 +18,7 @@ shuffle=TRUE
 
 [audgui]
 about_win=668,336,582,376
-eq_preset_win=1061,210,343,235
+eq_preset_win=787,441,343,235
 equalizer_win=816,607,288,288
 filebrowser_win=623,268,672,480
 filesel_path=/home/srsantos/Music/Various
@@ -33,6 +33,7 @@ player_width=1142
 player_x=387
 player_y=256
 playlist_columns=title artist album year queued length
+show_remaining_time=TRUE
 
 [gtkui-layout]
 item0_name=Album Art
@@ -54,8 +55,10 @@ item_count=7
 [skins]
 mainwin_font=Roboto Medium 9
 mainwin_use_bitmapfont=FALSE
+player_x=122
+player_y=184
 playlist_font=Roboto Medium 8
-skin=/usr/share/audacious/Skins/Default
+skin=/usr/share/audacious/Skins/Osmosis
 
 [song_change]
 cmd_line=/usr/bin/python2.7 /home/srsantos/.config/Audacious_Notifier/AudaciousNotifier.py "%f" "%n"
