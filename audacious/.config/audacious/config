@@ -53,12 +53,16 @@ item6_pos=-1,0,0,284,188
 item_count=7
 
 [skins]
+equalizer_x=821
+equalizer_y=500
 mainwin_font=Roboto Medium 9
 mainwin_use_bitmapfont=FALSE
-player_x=122
-player_y=184
+player_x=821
+player_y=500
 playlist_font=Roboto Medium 8
-skin=/usr/share/audacious/Skins/Osmosis
+playlist_x=835
+playlist_y=659
+skin=/usr/share/audacious/Skins/Clearsky
 
 [song_change]
 cmd_line=/usr/bin/python2.7 /home/srsantos/.config/Audacious_Notifier/AudaciousNotifier.py "%f" "%n"

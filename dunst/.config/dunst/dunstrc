@@ -23,7 +23,7 @@
     word_wrap = yes
 
     icon_position = left
-    icon_path = /home/srsantos/.config/dunst/icons:/usr/share/icons/gnome-colors-common/scalable/status:/usr/share/icons/gnome-brave/scalable/status
+    icon_path = /home/srsantos/.config/dunst/icons
     max_icon_size = 96
 
     frame_width = 1
@@ -79,4 +79,7 @@
     summary = "No updates from AUR"
     format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
 
+[ChangeBrightness]
+    appname = ChangeBrightness
+    format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
 

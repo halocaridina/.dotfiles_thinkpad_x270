@@ -103,7 +103,7 @@ syntax on
 set background=dark
 set t_Co=256
 colorscheme apprentice
-"other potential colorschemes: arcadia,base16-atelier-savanna,base16-ateliersavanna,base16-grayscale-dark,blues,dzo,eclm_wombat,oceanblack,phoenix,pixelmuerto
+"other potential colorschemes: apprentice,arcadia,base16-atelier-savanna,base16-ateliersavanna,base16-grayscale-dark,blues,dzo,eclm_wombat,oceanblack,phoenix,pixelmuerto
 
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 let g:CSApprox_hook_post = ['hi Normal ctermbg=NONE', 'hi NonText ctermbg=NONE' ]
