@@ -70,6 +70,7 @@
 [pasystray]
     appname = pasystray
     format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
+    new_icon = /home/srsantos/.config/dunst/icons/pasystray_bw.png
 
 [update_arch_notification.sh]
     summary = "No updates for Archlinux"
@@ -82,4 +83,6 @@
 [ChangeBrightness]
     appname = ChangeBrightness
     format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
+
+
 

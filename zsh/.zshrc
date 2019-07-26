@@ -99,6 +99,8 @@ alias l='ls -Flh'
 alias ll='ls -Falh'
 alias history='history -E'
 
+alias weather_now='curl wttr.in'
+
 alias connect_2_office_intel="sshfs srsantos@office_intel:/Users/srsantos /home/srsantos/Documents/Remote_FS/Office_intel && /usr/bin/notify-send -u low 'Remote FS Mounted' 'Now accessible.' -i /usr/share/icons/gnome-colors-common/scalable/places/network-server.svg"
 alias connect_2_ubuntu_server="sshfs srsantos@ubuntu_server:/home/srsantos /home/srsantos/Documents/Remote_FS/Ubuntu_server && /usr/bin/notify-send -u low 'Remote FS Mounted' 'Now accessible.' -i /usr/share/icons/gnome-colors-common/scalable/places/network-server.svg"
 alias disconnect_office_intel="fusermount -u /home/srsantos/Documents/Remote_FS/Office_intel && /usr/bin/notify-send -u low 'Remote FS Unmounted' 'Bye, Bye.' -i /usr/share/icons/gnome-colors-common/scalable/places/network-server.svg"
