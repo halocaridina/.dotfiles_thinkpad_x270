@@ -65,24 +65,24 @@
 
 [Xfce volume daemon]
     appname = Xfce volume daemon
-    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
+    format = "<span font="Roboto Mono for Powerline Regular 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
 [pasystray]
     appname = pasystray
-    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
+    format = "<span font="Roboto Mono for Powerline Regular 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
     new_icon = /home/srsantos/.config/dunst/icons/pasystray_bw.png
 
 [update_arch_notification.sh]
     summary = "No updates for Archlinux"
-    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
+    format = "<span font="Roboto Mono for Powerline Regular 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
 [update_aur_notification.sh]
     summary = "No updates from AUR"
-    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
+    format = "<span font="Roboto Mono for Powerline Regular 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
 [ChangeBrightness]
     appname = ChangeBrightness
-    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
+    format = "<span font="Roboto Mono for Powerline Regular 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
 [Audacious]
     appname = Audacious
