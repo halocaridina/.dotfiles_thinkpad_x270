@@ -1,7 +1,7 @@
 [global]
     markup = yes
-    font = "xos4 Terminess Powerline 18px"
-    format = "<span font="xos4 Terminess Powerline 24px">%s</span>\n<span font="xos4 Terminess Powerline 18px">%b</span>"
+    font = "Roboto Mono Medium for Powerline 18"
+    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span>\n<span font="Roboto Mono for Powerline Regular 14">%b</span>"
     alignment = center
 
     bounce_freq = 0
@@ -65,24 +65,25 @@
 
 [Xfce volume daemon]
     appname = Xfce volume daemon
-    format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
+    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
 [pasystray]
     appname = pasystray
-    format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
+    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
     new_icon = /home/srsantos/.config/dunst/icons/pasystray_bw.png
 
 [update_arch_notification.sh]
     summary = "No updates for Archlinux"
-    format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
+    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
 [update_aur_notification.sh]
     summary = "No updates from AUR"
-    format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
+    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
 [ChangeBrightness]
     appname = ChangeBrightness
-    format = "<span font="xos4 Terminess Powerline 24px">%s</span><span font="xos4 Terminess Powerline 18px">%b</span>"
+    format = "<span font="Roboto Mono Medium for Powerline 18">%s</span><span font="Roboto Mono for Powerline Regular 14">%b</span>"
 
-
-
+[Audacious]
+    appname = Audacious
+    format = "<span font="Roboto Mono Medium for Powerline 17">%s</span>\n<span font="Roboto Mono for Powerline Regular 13">%b</span>"
