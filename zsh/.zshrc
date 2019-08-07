@@ -91,7 +91,7 @@ alias paclocs='pacman -Qs'           # Search for package(s) in the local databa
 alias paclo="pacman -Qdt"            # List all packages which are orphaned
 alias pacc="sudo pacman -Scc"        # Clean cache - delete all not currently installed package files
 alias paclf="pacman -Ql"             # List all files installed by a given package
-alias pacexpl="pacman -D --asexp"    # Mark one or more installed packages as explicitly installed 
+alias pacexpl="pacman -D --asexp"    # Mark one or more installed packages as explicitly installed
 alias pacimpl="pacman -D --asdep"    # Mark one or more installed packages as non explicitly installed
 alias install_size="/usr/bin/expac -Q '%m' -H M | /usr/bin/datamash -W sum 1"
 
@@ -151,6 +151,10 @@ export GREP_COLORS='fn=00;38;5;33:mc=00;36:ms=31:mt=01;38;5;200:ln=01;38;5;14'
 LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
 
 ##################################################################################
+# Start the gpg-agent if not already running
+if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
+  gpg-connect-agent /bye >/dev/null 2>&1
+fi
 
 ## Set SSH to use gpg-agent
 unset SSH_AGENT_PID
