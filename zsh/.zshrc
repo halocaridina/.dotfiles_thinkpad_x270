@@ -125,6 +125,7 @@ alias screenfetch='neofetch'
 alias nano='vim'
 alias less='less -e -i -M -R -q'
 alias sm_readers_ls='opensc-tool -l'
+alias drawn_power='awk '{print $1*10^-6 " W"}' /sys/class/power_supply/BAT*/power_now'
 
 alias update_prezto='cd $ZPREZTODIR && git pull && git submodule update --init --recursive && cd ~'
 
