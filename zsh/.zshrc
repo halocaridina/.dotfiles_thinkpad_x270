@@ -118,14 +118,13 @@ alias close_secure_sd='sudo cryptsetup luksClose secure_sd'
 alias open_secure_usb='sudo cryptsetup luksOpen /dev/sdc secure_usb'
 alias close_secure_usb='sudo cryptsetup luksClose secure_usb'
 
-alias battery_level='cat /sys/class/power_supply/BAT0/uevent | grep POWER_SUPPLY_CAPACITY='
+alias battery_level='cat /sys/class/power_supply/BAT*/uevent | grep POWER_SUPPLY_CAPACITY='
 alias i3_exit='i3-msg exit'
 alias sys-info='inxi -Fxz'
 alias screenfetch='neofetch'
-alias nano='vim'
 alias less='less -e -i -M -R -q'
 alias sm_readers_ls='opensc-tool -l'
-alias drawn_power='awk '{print $1*10^-6 " W"}' /sys/class/power_supply/BAT*/power_now'
+alias drawn_power='awk '\''{print $1*10^-6 " W"}'\'' /sys/class/power_supply/BAT*/power_now'
 
 alias update_prezto='cd $ZPREZTODIR && git pull && git submodule update --init --recursive && cd ~'
 

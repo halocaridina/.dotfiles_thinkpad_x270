@@ -37,4 +37,5 @@ UseDefaultWorkingDir=TRUE
 DefaultWorkingDir=/home/srsantos
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
+ScrollingOnOutput=FALSE
 
