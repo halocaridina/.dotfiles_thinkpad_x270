@@ -5,7 +5,7 @@ xterm*savelines: 16384
 
 xterm*rightScrollBar: false
 xterm*ScrollBar: false
-xterm*VT100.geometry: 80x50
+!xterm*VT100.geometry: 80x50
 
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
@@ -17,9 +17,10 @@ xterm*backarrowKey: false
 xterm*ttyModes: erase ^?
 xterm*scrollTtyOutput: false
 
-xterm*faceName: xos4 Terminess Powerline:antialias=false
+xterm*faceName: TerminessTTF Nerd Font Mono:antialias=false
+xterm*renderFont: true
 xterm*allowBoldFonts: false
-xterm*faceSize:  10
+xterm*faceSize:  13
 xterm*faceSize1: 7
 xterm*faceSize2: 8
 xterm*faceSize3: 9

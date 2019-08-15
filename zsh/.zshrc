@@ -100,6 +100,8 @@ alias ll='ls -Falh'
 alias history='history -E'
 
 alias weather_now='curl wttr.in'
+alias battery_level='acpi -b | sort -r | xargs | sed '\''s/Battery /  #/g'\'''
+alias drawn_power='awk '\''{print $1*10^-6 " W"}'\'' /sys/class/power_supply/BAT*/power_now'
 
 alias connect_2_office_intel="sshfs srsantos@office_intel:/Users/srsantos /home/srsantos/Documents/Remote_FS/Office_intel && /usr/bin/notify-send -u low 'Remote FS Mounted' 'Now accessible.' -i /usr/share/icons/gnome-colors-common/scalable/places/network-server.svg"
 alias connect_2_ubuntu_server="sshfs srsantos@ubuntu_server:/home/srsantos /home/srsantos/Documents/Remote_FS/Ubuntu_server && /usr/bin/notify-send -u low 'Remote FS Mounted' 'Now accessible.' -i /usr/share/icons/gnome-colors-common/scalable/places/network-server.svg"
@@ -118,13 +120,11 @@ alias close_secure_sd='sudo cryptsetup luksClose secure_sd'
 alias open_secure_usb='sudo cryptsetup luksOpen /dev/sdc secure_usb'
 alias close_secure_usb='sudo cryptsetup luksClose secure_usb'
 
-alias battery_level='cat /sys/class/power_supply/BAT*/uevent | grep POWER_SUPPLY_CAPACITY='
 alias i3_exit='i3-msg exit'
 alias sys-info='inxi -Fxz'
 alias screenfetch='neofetch'
 alias less='less -e -i -M -R -q'
 alias sm_readers_ls='opensc-tool -l'
-alias drawn_power='awk '\''{print $1*10^-6 " W"}'\'' /sys/class/power_supply/BAT*/power_now'
 
 alias update_prezto='cd $ZPREZTODIR && git pull && git submodule update --init --recursive && cd ~'
 

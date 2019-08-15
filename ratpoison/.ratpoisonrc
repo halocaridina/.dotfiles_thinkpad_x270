@@ -1,0 +1,80 @@
+# Set font and general appearance
+startup_message off
+set font "Roboto Mono Medium for Powerline:size=13"
+set fgcolor #E5E5E5
+set bgcolor #292929
+set fwcolor #666666
+set bargravity ne
+set winliststyle row
+set winfmt [%n] %a %s %t
+set winname title
+set wingravity c
+set maxsizegravity c
+set padding 0 0 0 0
+set barpadding 8 0
+set barinpadding 1
+set barborder 0
+set border 1
+set waitcursor 0
+msgwait 6
+
+# Setting the escape key to the Windows key
+escape Super_L
+
+# Unbind terminal key
+unbind c
+unbind m
+
+# Apps bindings
+bind b exec luakit
+bind Return exec termite
+bind m exec ms_outlook_webapp
+bind B exec ratpoison -c "echo `acpi -abt`"
+
+# Rofi bindings
+bind C-d exec SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh /usr/bin/rofi -show run
+bind C-p exec rofi-pass
+bind C-n exec networkmanager_dmenu
+definekey top XF86Favorites exec rofi_rpexit.sh
+
+# Create 2 workspaces
+exec rpws init 4 -k
+
+# Workspace bindings
+bind C-1 exec rpws 1
+bind C-2 exec rpws 2
+bind C-3 exec rpws 3
+bind C-4 exec rpws 4
+
+# tell ratpoison to ignore rpbar
+unmanage rpbar
+# leave space for bars
+set padding 0 0 0 24
+# start rpbar
+exec rpbar
+# hooks
+addhook switchwin exec rpbarsend
+addhook switchframe exec rpbarsend
+addhook switchgroup exec rpbarsend
+addhook deletewindow exec rpbarsend
+# RP versions >= 1.4.6 (from the git repo) have these hooks.
+# Recommended!
+addhook titlechanged exec rpbarsend
+addhook newwindow exec rpbarsend
+
+# Hotkeys
+definekey top XF86MonBrightnessUp exec brightness_indicator.sh up
+definekey top XF86MonBrightnessDown exec brightness_indicator.sh down
+
+# Programs to autostart
+exec /usr/bin/xfce4-volumed-pulse
+exec /usr/bin/pulseaudio-ctl mute-input
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/bin/unclutter --timeout 10 --jitter 20 --exclude-root --ignore-scrolling --fork
+exec /usr/bin/dunst -config /home/srsantos/.config/dunst/dunstrc_ratpoison
+exec /usr/bin/xautolock -time 30 -locker "systemctl suspend" -detectsleep &
+exec /usr/local/bin/toggle_xautolock.sh
+exec /usr/bin/xss-lock -- /usr/bin/i3lock -f -b -i /home/srsantos/.i3/wallpapers/Black_Burst_Info_1920x1080.png &
+
+# Pop up a terminal at startup
+exec /usr/bin/termite
