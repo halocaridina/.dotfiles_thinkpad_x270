@@ -31,8 +31,8 @@ queue_manager_win=815,412,288,192
 column_widths=10,275,175,48,175,175,10,100,39,75,275,275,275,10,275
 player_height=613
 player_width=1214
-player_x=318
-player_y=192
+player_x=351
+player_y=256
 playlist_columns=title artist album year queued length
 show_remaining_time=TRUE
 
