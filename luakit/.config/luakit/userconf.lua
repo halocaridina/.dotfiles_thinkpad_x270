@@ -12,7 +12,7 @@ settings.window.load_etc_hosts                        = false
 
 settings.webview.enable_smooth_scrolling             = true
 
-settings.webview.zoom_level                           = 140
+settings.webview.zoom_level                           = 150
 settings.webview.zoom_text_only                       = false
 settings.webview.enable_webgl                         = true
 
