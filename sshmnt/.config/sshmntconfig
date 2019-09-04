@@ -13,8 +13,8 @@ editor=vim:
 #Example:
 # location=name:login=username:ip=address:port=22:path=/basepath/of/mount:mntopts=uid=99,gid=99:
 location=ASC:login=aubsrs:ip=dmc.asc.edu:port=22:path=/home/aubsrs:mntopts=uid=1000,gid=1000:
-location=Cyberdyne:login=srsantos:ip=cyberdyne:port=22:path=/home/srsantos:mntopts=uid=1000,gid=1000:
-location=Office_Intel:login=srsantos:ip=office_intel:port=22:path=/Users/srsantos:mntopts=uid=1000,gid=1000:
-location=SkyNet:login=srsantos:ip=skynet:port=22:path=/home/srsantos:mntopts=uid=1000,gid=1000:
-location=Ubuntu_Server:login=srsantos:ip=ubuntu_server:port=22:path=/home/srsantos:mntopts=uid=1000,gid=1000:
+location=Cyberdyne:login=srsantos:ip=cyberdyne:port=22:path=/:mntopts=uid=1000,gid=1000:
+location=Office_Intel:login=srsantos:ip=office_intel:port=22:path=/:mntopts=uid=1000,gid=1000:
+location=SkyNet:login=srsantos:ip=skynet:port=22:path=/:mntopts=uid=1000,gid=1000:
+location=Ubuntu_Server:login=srsantos:ip=ubuntu_server:port=22:path=/:mntopts=uid=1000,gid=1000:
 
