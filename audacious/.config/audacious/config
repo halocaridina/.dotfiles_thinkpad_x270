@@ -23,17 +23,17 @@ about_win=668,336,582,376
 eq_preset_win=787,441,343,235
 equalizer_win=816,607,288,288
 filebrowser_win=623,268,672,480
-filesel_path=/home/srsantos/Music/Various
+filesel_path=/home/srsantos/Music/Sponge/Rotting Piñata
 info_win=630,282,573,474
 preset_browser_win=203,236,1020,765
 queue_manager_win=815,412,288,192
 
 [gtkui]
 column_widths=10,275,175,48,175,175,10,100,39,75,275,275,275,10,275
-player_height=613
-player_width=1214
-player_x=359
-player_y=195
+player_height=279
+player_width=664
+player_x=110
+player_y=105
 playlist_columns=title artist album year queued length
 show_remaining_time=TRUE
 
