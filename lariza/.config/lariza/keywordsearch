@@ -1,0 +1,8 @@
+archwiki https://wiki.archlinux.org/?search=%s
+aur https://aur.archlinux.org/packages/?O=0&SeB=n&K=%s
+ddgo https://duckduckgo.com/?q=%s
+gthb https://github.com/search?q=%s
+ggle https://google.com/search?q=%s
+imdb http://www.imdb.com/find?s=all&q=%s
+ncbi https://www.ncbi.nlm.nih.gov/gquery/?term=%s
+wipe https://en.wikipedia.org/wiki/Special:Search?search=%s

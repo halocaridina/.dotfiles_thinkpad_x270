@@ -1,0 +1,5 @@
+.*/ad/.*
+.*/ads/.*
+^https?://ad.*
+^https?://advert.*
+^https?://.*\.advertising\.com/

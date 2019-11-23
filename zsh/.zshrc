@@ -71,6 +71,8 @@ alias upstream_git_update='git pull upstream master && git push origin master &&
 
 alias enabled_units='systemctl list-unit-files | grep enabled'
 
+alias lariza='/home/srsantos/.config/lariza/lariza_launcher.sh'
+
 alias restart_udev='sudo udevadm control --reload'
 ##### udevadm control --reload-rules && udevadm trigger
 alias view_recent_alerts='sudo journalctl -p err..alert -b'

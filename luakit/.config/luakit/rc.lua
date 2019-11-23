@@ -189,6 +189,10 @@ if pcall(function () lousy.util.find_config("userconf.lua") end) then
     require "userconf"
 end
 
+window.add_signal("init", function (w)
+        w.win.maximized = true
+    end)
+
 modes.add_binds("ex-follow", {
   -- Yank element uri to open in an external application
   { "d", "[[Hint all links (as defined by the `follow.selectors.uri` selector) and set the primary selection to the matched elements URI, so that an external app can open it]]",
