@@ -11,6 +11,8 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'pacman' \
+  'tmux' \
   'prompt'
 
 # Set the Zsh modules to load (man zshmodules).
