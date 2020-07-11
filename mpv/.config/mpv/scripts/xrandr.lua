@@ -159,7 +159,7 @@ function xrandr_find_best_fitting_rate(fps, output)
 		-- check for a "perfect" match (where fps rates of e.g. 60.0 are not equal 59.9 or such)
 		for i=1,#xrandr_rates do
 			r = xrandr_rates[i]
-			if (math.abs(r-(m * fps)) < 0.001) then
+			if (math.abs(r-(m * fps)) < 0.002) then
 				return r
 			end
 		end
@@ -296,8 +296,13 @@ function xrandr_set_rate()
 					p["args"][4] = "--mode"
 					p["args"][5] = xrandr_modes[output].mode
 					p["args"][6] = "--rate"
-					p["args"][7] = bfr
+					p["args"][7] = tostring(bfr)
 
+					local cmd_as_string = ""
+					for k, v in pairs(p["args"]) do
+						cmd_as_string = cmd_as_string .. v .. " "
+					end
+					mp.msg.log("debug", "executing as subprocess: \"" .. cmd_as_string .. "\"")
 					local res = utils.subprocess(p)
 
 					if (res["error"] ~= nil) then
@@ -339,7 +344,7 @@ function xrandr_set_old_rate()
 		
 		local old_rate = xrandr_modes[output].old_rate
 		
-		if (old_rate == 0) then
+		if (old_rate == 0 or xrandr_previously_set[output] == nil ) then
 			mp.msg.log("v", "no previous frame rate known for output " .. output .. " - so no switching back.")
 		else
 

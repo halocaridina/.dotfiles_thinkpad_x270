@@ -5,4 +5,3 @@ SkyNet	srsantos	skynet	22 ssh
 Ubuntu_Server	srsantos	ubuntu_server	22 ssh
 pi0_gate_admin	pi	pi0_gate	22 ssh
 pi0_gate_studnt	student	pi0_gate	22 ssh
-raspbian1-hole	pi	10.0.1.10	22 ssh
