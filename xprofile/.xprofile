@@ -4,6 +4,8 @@ if [ -n "$DESKTOP_SESSION" ]; then
     export SSH_AUTH_SOCK
 fi
 
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 # Start the rxvt daemon in the background
 #/usr/bin/urxvtd -q -f -o
 

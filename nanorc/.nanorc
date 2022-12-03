@@ -24,13 +24,13 @@ set noconvert
 ## set nowrap
 
 ## Use smooth scrolling as the default
-set smooth
+## set smooth
 
 ## Use this spelling checker instead of the internal one.  This option does not properly have a default value.
 set speller "aspell -c"
 
 ## Allow nano to be suspended with ^Z
-set suspend
+## set suspend
 
 ## For DNA sequence in FASTA format
 syntax "fasta" "\.fasta$" "\.fas$"
