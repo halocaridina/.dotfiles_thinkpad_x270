@@ -30,7 +30,6 @@ FontName=Roboto Mono for Powerline 12
 TextBlinkMode=TERMINAL_TEXT_BLINK_MODE_NEVER
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 FontAllowBold=FALSE
-BackgroundDarkness=0.750000
 UseDefaultWorkingDir=TRUE
 DefaultWorkingDir=/home/srsantos
 MiscSearchDialogOpacity=100
