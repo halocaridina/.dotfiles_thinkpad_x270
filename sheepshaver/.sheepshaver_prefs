@@ -21,7 +21,7 @@ ignoreillegal false
 jit true
 jit68k false
 keyboardtype 5
-ether slirp
+ether wlp3s0
 keycodes true
 keycodefile /home/srsantos/.bin/sheepshaver/keycodes
 mousewheelmode 1
