@@ -21,6 +21,9 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 # Enable killing X via key combo
 /usr/bin/setxkbmap -option terminate:ctrl_alt_bksp
 
+# Disable touchscreen on X270
+/usr/bin/xinput disable 'ELAN Touchscreen'
+
 # Set auto-suspend after 30 mins of inactivity
 #/usr/bin/xautolock -time 30 -locker "systemctl suspend" -detectsleep &
 
