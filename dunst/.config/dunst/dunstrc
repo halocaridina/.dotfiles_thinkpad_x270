@@ -6,7 +6,8 @@
 
     bounce_freq = 0
     follow = keyboard
-    geometry = "500x5-8+30"
+    width = 500
+    height = 300
     horizontal_padding = 8
     idle_threshold = 120
     ignore_newline = false
