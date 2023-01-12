@@ -6,6 +6,7 @@
 
     bounce_freq = 0
     follow = keyboard
+    offset = 10x30
     width = 500
     height = 300
     horizontal_padding = 8
@@ -40,7 +41,7 @@
 
     stack_duplicates = true
     hide_duplicate_count = false
-    corner_radius = 4
+    corner_radius = 8
 
 [shortcuts]
     close = ctrl+space
